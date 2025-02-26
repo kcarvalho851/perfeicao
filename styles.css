@@ -1,0 +1,115 @@
+/* Reset geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth; /* Rolagem suave */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3); /* Translucidez */
+  backdrop-filter: blur(10px); /* Efeito de desfoque */
+  padding: 10px 0;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.container-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.navbar-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #007bff;
+}
+
+/* Efeito de desaparecimento do nome da seção na navbar */
+.navbar-links a.inactive {
+  opacity: 0.5;
+}
+
+.content {
+  margin-top: 120px; /* Ajuste para não sobrepor a navbar */
+  padding: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.banner-image {
+  margin-top: 20px;
+}
+
+.banner-image img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.section {
+  margin-top: 50px;
+  padding-top: 60px; /* Para permitir que o topo da seção não seja coberto */
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Estilo para links dentro do conteúdo */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
